@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, bootstrap" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./tdlist.css">
+    <title>  To Do List  </title>
+</head>
+<body id="top">
+    <div class="container " id="title" >
+
+        <h1>To Do List</h1>
+
+        
+ 
+        <form action="/action_page.php">
+         <label for="today_is">today :</label>
+           <input type="date" id="today_is" name="today_is">
+           <input type="submit" value="Ok">
+            </form>
+
+
+    </div>
+    <div class="container" id="Goals_Lists">
+        <div id="Goal_week" class="container" >
+            <h2>Goal list for This Week </h2>
+            <div class="wrapper" id="post_it">
+                <img src="./task.png" alt="sticker" class="picture" height="250px" width="300px">
+            
+               
+                    <label for="week"> week:</label>
+                    <input type="week" id="week" name="week">
+                    <input type="submit" value="Ok">
+                
+            </div>
+
+        </div>
+        <div class="wrapper2" id="Goals_day">
+            <div class="container" id="tasks_list">
+                <h2> Tasks :</h2>
+                    
+                   
+                    <input type="text" id="myInput" placeholder="Things to be done..." />
+                    <span class="addBtn" id="add_button">Add</span>
+                  <ul id="myUL">
+                   
+                     </ul>
+
+            </div>
+            <div class="container" id="reminder" >
+                <h2>Don't Forget to</h2>
+                <img src="./back2.png" height="250px" width="250px" class="picture">
+                <input type="text" id="Donotforget" placeholder="reminders..." />
+                    <span class="addBtn" id="add_button">Add</span>
+                  <ul id="myReminders">
+                   
+                     </ul>
+
+            </div>
+        </div>
+
+    </div>
+   <script src ="./tdjs.js"></script>
+</body>
+    </html>
